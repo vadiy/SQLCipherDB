@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_dbpath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DB文件路径 /data/data/包名/databases/*.db"
+            android:inputType="textPersonName"
+            android:text="/data/data/com.yunzhan.liaobei/databases/chaoxin_storage.db" />
+
+        <EditText
+            android:id="@+id/et_dbpsw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DB密码"
+            android:inputType="textPersonName"
+            android:text="03c6507e9f1e2daaee1ccbfb00009883" />
+
+        <EditText
+            android:id="@+id/et_dbsqltext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="SQL语句"
+            android:inputType="textPersonName"
+            android:text="SELECT `value` FROM `liaobei_user_registry_757403101` WHERE `key`=70" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_dbopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="打开/创建数据库" />
+
+            <Button
+                android:id="@+id/bt_dbsqlexc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="执行SQL" />
+
+            <Button
+                android:id="@+id/bt_dbclear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="清屏" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_dbresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="结果显示"
+            android:inputType="textMultiLine|textPersonName"
+            android:singleLine="true" />
+
+    </LinearLayout>
+</FrameLayout>

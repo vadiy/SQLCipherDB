@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_xmlpath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="XML文件路径 /data/data/包名/shared_prefs/*.xml"
+            android:inputType="textPersonName"
+            android:text="/data/data/com.yunzhan.liaobei/shared_prefs/SHANLIAOPREFERENCE.xml" />
+
+        <EditText
+            android:id="@+id/et_xmlkey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="XML键名"
+            android:inputType="textPersonName"
+            android:text="PreferenceKey_DeviceUuid" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_xmlopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="打开文件" />
+
+            <Button
+                android:id="@+id/bt_xmlshowall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查看文件" />
+
+            <Button
+                android:id="@+id/bt_xmlserch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查询" />
+
+            <Button
+                android:id="@+id/bt_xmlclear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清屏" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_xmlresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="结果显示"
+            android:inputType="textMultiLine|textPersonName"
+            android:singleLine="true" />
+
+    </LinearLayout>
+</FrameLayout>
